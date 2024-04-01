@@ -1,7 +1,9 @@
-from numpy import random
-import matplotlib.pyplot as plt
-import seaborn as sns
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
-sns.distplot(random.binomial(n=10, p=0.5, size=1000), hist=True, kde=False)
+p1 = Person("John", 36)
 
-plt.show()
+print(p1.name)
+print(p1.age)
